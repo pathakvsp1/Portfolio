@@ -299,6 +299,7 @@ section .title::after {
 	width: calc(33% - 20px);
 	background: #222;
 	text-align: center;
+	min-height: 275px;
 	border-radius: 6px;
 	padding: 20px 25px;
 	cursor: pointer;
@@ -418,13 +419,13 @@ section .title::after {
 
 /* projects section styling */
 .projects .title::after {
-	content: "Education";
+	content: "Projects";
 }
 
 .projects .carousel .card {
-	width: calc(49%);
+	width: calc(33%);
 	display: inline-table;
-	height: 380px;
+	min-height: 420px;
 	background: #222;
 	text-align: center;
 	border-radius: 6px;
@@ -452,15 +453,24 @@ section .title::after {
 }
 .projects .carousel .card img {
 	height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 38%;
+    border: 3px solid rgb(0 0 0);
+    transition: all 0.3s ease;
+}
+.projects .carousel .card .probooking {
+	height: 150px;
 	width: 150px;
-	object-fit: cover;
-	border-radius: 50%;
-	border: 5px solid rgb(16, 104, 236);
+	background: rgb(241 243 247);
+	object-fit:contain;
+	border-radius: 38%;
+	border: 3px solid rgb(47, 50, 54);
 	transition: all 0.3s ease;
 }
-.projects .carousel .card:hover img {
-	border-color: #fff;
-}
+/* .projects .carousel .card:hover img {
+	border-color: rgb(255, 255, 255);
+} */
 
 /* contact section styling */
 .quote{
